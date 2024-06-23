@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body><center>
+        <p id="p">Enter the text to get in speech</p>
+        <input type="text" id="text">
+        <button onclick="myfunction();">click me!</button>
+    </center>
+        <script>
+            function myfunction(){
+                var x= document.getElementById("text").value;
+                var u= new SpeechSynthesisUtterance(x);
+                speechSynthesis.speak(u);
+                
+                
+            }
+        </script>
+    </body>
+</html>
